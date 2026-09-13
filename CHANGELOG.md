@@ -9,6 +9,17 @@ where applicable, otherwise note "no-spec-impact."
 
 ### Added
 
+- **"Edit post" does something now.** It used to be a placeholder that changed nothing. It now
+  opens an editor where you can change a post's title, description, who can see it and its tags,
+  choose which of its files is the cover, and set how that cover is framed. If somebody else
+  changed the post after you opened it, your save is refused rather than overwriting theirs. You
+  can reload to see their version, or keep your edits and save again over it. Saving never
+  publishes a draft or takes a published post down; publishing stays a separate step. The
+  editor lists the collections you can open that hold the post, tells you how many more hold it
+  that you cannot open, and offers to remove it only from the ones you already have the right to
+  change. Re-saving a post with the tags it already had used to remove those tags; it no longer
+  does (#1119, PR #1429).
+
 - **Finish an upload and the page you were already on catches up by itself.**
   Publishing through the quick upload dialog used to leave the page behind it showing the
   old answer until you reloaded the browser. A collection, the browse feed, a team page, a
